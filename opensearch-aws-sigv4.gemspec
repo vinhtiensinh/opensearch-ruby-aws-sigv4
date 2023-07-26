@@ -19,10 +19,6 @@ Gem::Specification.new do |s|
   s.authors       = ['Theo Truong', 'Robin Roestenburg']
   s.email         = %w[theo.nam.truong@gmail.com robin.roestenburg@4me.com]
   s.summary       = 'Ruby AWS Sigv4 Client for OpenSearch'
-  s.description   = <<~DESC
-    A wrapper for opensearch-ruby gem that provides AWS Sigv4 signing.
-    It behaves like OpenSearch::Client, but signs every request with AWS Sigv4
-    using the credentials provided during the client's initialization.
   DESC
   s.metadata = {
     'homepage_uri'          => 'https://github.com/opensearch-project/opensearch-ruby-aws-sigv4',
@@ -47,8 +43,6 @@ Gem::Specification.new do |s|
     s.signing_key = signing_key
     s.cert_chain  = ['.github/opensearch-rubygems.pem']
   end
-
-  s.required_ruby_version = '>= 2.4'
 
   s.add_dependency 'aws-sigv4', '~> 1'
   s.add_dependency 'opensearch-ruby', '>= 1.0.1'
